@@ -47,7 +47,7 @@ export default function Home() {
 
   // --- LÓGICA ORIGINAL ---
   const getYoutubeDetails = (link: string) => {
-    const match = link.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
+    const match = link.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|shorts)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
     return (match && match[1]) ? { id: match[1], img: `https://img.youtube.com/vi/${match[1]}/mqdefault.jpg` } : null;
   };
 

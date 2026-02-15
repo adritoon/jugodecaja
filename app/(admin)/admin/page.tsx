@@ -100,7 +100,7 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-[#09090b] text-white p-6 font-sans">
       <header className="flex justify-between items-center mb-10 border-b border-zinc-800 pb-6">
-        <h1 className="text-2xl font-black italic tracking-tighter text-pink-500 uppercase">Jukebox Admin</h1>
+        <h1 className="text-2xl font-black italic tracking-tighter text-pink-500 uppercase">ZubitoTV Admin</h1>
         <button onClick={() => supabase.auth.signOut().then(() => router.push("/login"))} className="text-zinc-500 hover:text-red-500 flex items-center gap-2 font-bold text-xs transition-colors uppercase">
           <LogOut size={16}/> Cerrar Sesión
         </button>
